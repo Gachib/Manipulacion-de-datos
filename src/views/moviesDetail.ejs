@@ -17,6 +17,9 @@
     <p>AWARDS: <%= movie.awards %> </p>
     <p>LENGTH: <%= movie.length + ' min'%> </p>
     <p>RELEASE DATE: <%= movie.release_date %> </p>
-
+    <div class="btn-container">
+        <a href="/movies/edit/<%= movie.id %>" class="btn-editar">EDITAR</a>
+        <a href="/movies/delete/<%= movie.id %>" class="btn-delete">ELIMINAR</a>    
+    </div>
 </body>
 </html>
